@@ -37,22 +37,24 @@ Ao utilizar o `SmartDataCollector`, você pode se deparar com alguns problemas c
 
 **Solução**: Certifique-se de que o `smartmontools` esteja instalado corretamente em seu sistema e que o caminho para o `smartctl.exe` especificado no código esteja correto. No Windows, o caminho padrão após a instalação do `smartmontools` pode ser algo como `C:\\Program Files\\smartmontools\\bin\\smartctl.exe`. Verifique se o caminho reflete a localização correta do executável em seu sistema.
 
+## Possíveis Problemas
+
+Ao utilizar o `SmartDataCollector`, você pode se deparar com alguns problemas comuns. Aqui estão alguns dos mais frequentes e como resolvê-los:
+
+### smartctl não encontrado
+
+**Problema**: O programa retorna um erro indicando que não conseguiu encontrar ou executar `smartctl`.
+
+**Solução**: Certifique-se de que o `smartmontools` esteja instalado corretamente em seu sistema e que o caminho para o `smartctl.exe` especificado no código esteja correto. No Windows, o caminho padrão após a instalação do `smartmontools` pode ser algo como `C:\\Program Files\\smartmontools\\bin\\smartctl.exe`. Verifique se o caminho reflete a localização correta do executável em seu sistema.
+
 ### Permissão Negada
 
 **Problema**: Ao tentar executar o programa, você recebe uma mensagem de erro sobre permissões insuficientes.
 
-**Solução**: No Windows, execute o Prompt de Comando ou o PowerShell como Administrador. No Linux, embora o código seja primariamente direcionado para o Windows, se adaptado, você pode precisar usar `sudo` para executar o programa ou garantir que o usuário tenha as permissões adequadas para acessar as informações SMART dos dispositivos.
+**Solução**: No Windows, execute o Prompt de Comando ou o PowerShell como Administrador.
 
 ### Dados SMART não disponíveis ou incompletos
 
 **Problema**: Os dados SMART retornados estão incompletos, não disponíveis ou não fazem sentido.
 
 **Solução**: Nem todos os dispositivos de armazenamento suportam todas as métricas SMART ou podem ter suporte limitado dependendo do fabricante ou modelo. Verifique a documentação do seu dispositivo para entender quais dados SMART ele suporta. Além disso, certifique-se de que o `smartmontools` está atualizado para a versão mais recente, pois atualizações podem melhorar o suporte a dispositivos específicos.
-
-### Erro ao executar smartctl
-
-**Problema**: O programa reporta um erro ao tentar executar o comando `smartctl`, indicando um problema com o processo de execução.
-
-**Solução**: Verifique se as configurações de segurança do seu sistema (como o Controle de Conta de Usuário no Windows ou políticas de segurança específicas no Linux) não estão impedindo a execução de scripts ou aplicativos de linha de comando. No Windows, tentar desativar temporariamente essas configurações pode ajudar a identificar o problema.
-
-
