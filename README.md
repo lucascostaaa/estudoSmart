@@ -58,3 +58,6 @@ Ao utilizar o `SmartDataCollector`, você pode se deparar com alguns problemas c
 **Problema**: Os dados SMART retornados estão incompletos, não disponíveis ou não fazem sentido.
 
 **Solução**: Nem todos os dispositivos de armazenamento suportam todas as métricas SMART ou podem ter suporte limitado dependendo do fabricante ou modelo. Verifique a documentação do seu dispositivo para entender quais dados SMART ele suporta. Além disso, certifique-se de que o `smartmontools` está atualizado para a versão mais recente, pois atualizações podem melhorar o suporte a dispositivos específicos.
+
+### Informações Coletadas (Notebook)
+![image](https://github.com/lucascostaaa/estudoSmart/assets/56397638/e5639593-c6d6-4389-8122-1cea3dfa6358)
